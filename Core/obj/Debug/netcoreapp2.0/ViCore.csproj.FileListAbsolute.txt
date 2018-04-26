@@ -1,0 +1,8 @@
+C:\Users\espirit\Desktop\Athena-master\Core\obj\Debug\netcoreapp2.0\ViCore.csproj.CoreCompileInputs.cache
+C:\Users\espirit\Desktop\Athena-master\Core\obj\Debug\netcoreapp2.0\ViCore.AssemblyInfoInputs.cache
+C:\Users\espirit\Desktop\Athena-master\Core\obj\Debug\netcoreapp2.0\ViCore.AssemblyInfo.cs
+C:\Users\espirit\Desktop\Athena-master\Core\bin\Debug\netcoreapp2.0\ViCore.deps.json
+C:\Users\espirit\Desktop\Athena-master\Core\bin\Debug\netcoreapp2.0\ViCore.dll
+C:\Users\espirit\Desktop\Athena-master\Core\bin\Debug\netcoreapp2.0\ViCore.pdb
+C:\Users\espirit\Desktop\Athena-master\Core\obj\Debug\netcoreapp2.0\ViCore.dll
+C:\Users\espirit\Desktop\Athena-master\Core\obj\Debug\netcoreapp2.0\ViCore.pdb

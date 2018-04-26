@@ -1,0 +1,3 @@
+C:\Users\espirit\Desktop\Athena-master\Core\obj\Release\netcoreapp2.0\ViCore.csproj.CoreCompileInputs.cache
+C:\Users\espirit\Desktop\Athena-master\Core\obj\Release\netcoreapp2.0\ViCore.AssemblyInfoInputs.cache
+C:\Users\espirit\Desktop\Athena-master\Core\obj\Release\netcoreapp2.0\ViCore.AssemblyInfo.cs
