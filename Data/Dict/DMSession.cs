@@ -25,6 +25,7 @@ namespace ViData.Dict
                 //DbProviderFactory Dbfactory = DbProviderFactories.GetFactory(DbProviderName);
                 //Connection = Dbfactory.CreateConnection();
                 Connection = new MySql.Data.MySqlClient.MySqlConnection();
+                //Connection = new System.Data.SqlClient.SqlConnection();
                 Connection.ConnectionString = ConnectionString;
             }
         }

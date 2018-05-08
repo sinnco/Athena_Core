@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using log4net;
@@ -12,10 +13,14 @@ namespace ViCore.Logging
         protected static ILog Log
         {
             get
-            {
+            {                
                 if (_log == null)
                 {
-                    _log = LogManager.GetLogger("","Logger");
+                    log4net.Repository.ILoggerRepository repository = log4net.LogManager.CreateRepository("NETCoreRepository");
+                    FileInfo fileInfo = new FileInfo("config/log4net.config");
+                    log4net.Config.XmlConfigurator.Configure(repository, fileInfo);
+                    log4net.Config.BasicConfigurator.Configure(repository);
+                    _log= LogManager.GetLogger(repository.Name, "NETCorelog4net");
                 }
                 return _log;
             }
@@ -30,7 +35,7 @@ namespace ViCore.Logging
         {
             if (Log.IsInfoEnabled && message != null)
             {
-                Log.Info(message);
+                Log.Info(message+"\r\n ----------------------------");
             }
         }
 
@@ -47,7 +52,7 @@ namespace ViCore.Logging
             }
             if (Log.IsErrorEnabled)
             {
-                Log.Error(message, ex);
+                Log.Error(message+"\r\n ----------------------------", ex);
             }
         }
     }

@@ -15,14 +15,14 @@ namespace ViData
             get
             {
                 
-                // if (HttpContext.Current != null)
-                // {
-                //     var obj = HttpContext.Current.Items[SqlKey];
-                //     if (obj != null)
-                //     {
-                //         return obj.ToString();
-                //     }
-                // }
+                if (ViCore.Http.HttpContext.Current != null)
+                {
+                    var obj = ViCore.Http.HttpContext.Current.Items[SqlKey];
+                    if (obj != null)
+                    {
+                        return obj.ToString();
+                    }
+                }
                 return null;
             }
         }
@@ -138,21 +138,21 @@ namespace ViData
                     cmdText += string.Format(" ({0} = {1});", item.ParameterName, item.Value);
                 }
             }
-            // if (HttpContext.Current != null)
-            // {
-            //     if (HttpContext.Current.Items[SqlKey] != null)
-            //     {
-            //         HttpContext.Current.Items[SqlKey] = string.Format(" {0}; {1};", HttpContext.Current.Items[SqlKey], cmdText);
-            //     }
-            //     else
-            //     {
-            //         HttpContext.Current.Items[SqlKey] = cmdText;
-            //     }
-            // }
-            // else
-            // {
+            if (ViCore.Http.HttpContext.Current != null)
+            {
+                if (ViCore.Http.HttpContext.Current.Items[SqlKey] != null)
+                {
+                    ViCore.Http.HttpContext.Current.Items[SqlKey] = string.Format(" {0}; {1};", ViCore.Http.HttpContext.Current.Items[SqlKey], cmdText);
+                }
+                else
+                {
+                    ViCore.Http.HttpContext.Current.Items[SqlKey] = cmdText;
+                }
+            }
+            else
+            {
                  Console.WriteLine(cmdText);
-            // }
+            }
         }
 
         /// <summary>

@@ -17,7 +17,7 @@ namespace ViData
         const string CurrentSessionKey = "dm.current_session";
         const string ReadCurrentSessionKey = "dm.current_session.read";
         const string CfgFileName = "ViCore.config";
-        const string DefaultProvider = "System.Data.OracleClient";
+        const string DefaultProvider = "MySql.Data.MySqlClient";
         static readonly DMHelper _instance = new DMHelper();
         internal readonly DMSessionFactory _sessionfactory;
         internal DbProviderEx ProviderEx { get; private set; }
@@ -59,20 +59,20 @@ namespace ViData
             if (type == DbConntionType.WriteRead)
             {
 
-                // DMSession session = HttpContext.Current.Items[CurrentSessionKey + dbString] as DMSession;
-                // if (session == null)
-                // {
-                 DMSession    session = _sessionfactory.BuildSession(type, dbString);
-                //     HttpContext.Current.Items[CurrentSessionKey + dbString] = session;
-                // }
+                DMSession session = ViCore.Http.HttpContext.Current.Items[CurrentSessionKey + dbString] as DMSession;
+                if (session == null)
+                {
+                    session = _sessionfactory.BuildSession(type, dbString);
+                    ViCore.Http.HttpContext.Current.Items[CurrentSessionKey + dbString] = session;
+                }
                 return session;
             }
-            // DMSession readSession = HttpContext.Current.Items[ReadCurrentSessionKey + dbString] as DMSession;
-            // if (readSession == null)
-            // {
-            DMSession    readSession = _sessionfactory.BuildSession(type, dbString);
-            //     HttpContext.Current.Items[ReadCurrentSessionKey + dbString] = readSession;
-            // }
+            DMSession readSession = ViCore.Http.HttpContext.Current.Items[ReadCurrentSessionKey + dbString] as DMSession;
+            if (readSession == null)
+            {
+                readSession = _sessionfactory.BuildSession(type, dbString);
+                ViCore.Http.HttpContext.Current.Items[ReadCurrentSessionKey + dbString] = readSession;
+            }
             return readSession;
         }
 
@@ -206,16 +206,16 @@ namespace ViData
 
         public void CloseSession()
         {
-            // DMSession readSession = HttpContext.Current.Items[ReadCurrentSessionKey] as DMSession;
-            // if (readSession != null)
-            // {
-            //     readSession.Close();
-            // }
-            // DMSession session = HttpContext.Current.Items[CurrentSessionKey] as DMSession;
-            // if (session != null)
-            // {
-            //     session.Close();
-            // }
+            DMSession readSession = ViCore.Http.HttpContext.Current.Items[ReadCurrentSessionKey] as DMSession;
+            if (readSession != null)
+            {
+                readSession.Close();
+            }
+            DMSession session = ViCore.Http.HttpContext.Current.Items[CurrentSessionKey] as DMSession;
+            if (session != null)
+            {
+                session.Close();
+            }
         }
     }
 }
