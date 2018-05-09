@@ -39,7 +39,8 @@ namespace mvc_project
             }
 
             app.UseStaticFiles();
-app.UseHttpContextAI();
+            app.UseHttpContextAI();
+            
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

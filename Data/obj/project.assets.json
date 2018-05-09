@@ -5026,7 +5026,7 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
-      "ViCore/1.0.0-2.0.0": {
+      "ViCore/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
@@ -13238,7 +13238,7 @@
         "windowsazure.storage.nuspec"
       ]
     },
-    "ViCore/1.0.0-2.0.0": {
+    "ViCore/1.0.0": {
       "type": "project",
       "path": "../Core/ViCore.csproj",
       "msbuildProject": "../Core/ViCore.csproj"
@@ -13249,7 +13249,7 @@
       "Microsoft.AspNetCore.All >= 2.0.5",
       "Microsoft.NETCore.App >= 2.0.0",
       "MySql.Data >= 8.0.11",
-      "ViCore >= 1.0.0-2.0.0",
+      "ViCore >= 1.0.0",
       "log4net >= 2.0.8"
     ]
   },
@@ -13258,7 +13258,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "1.0.0-2.0.0",
+    "version": "1.0.0",
     "restore": {
       "projectUniqueName": "D:\\git\\athena_core\\Data\\ViData.csproj",
       "projectName": "ViData",
