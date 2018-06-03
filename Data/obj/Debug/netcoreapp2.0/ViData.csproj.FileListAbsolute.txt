@@ -20,3 +20,4 @@ D:\git\athena_core\Data\obj\Debug\netcoreapp2.0\ViData.AssemblyInfo.cs
 D:\git\athena_core\Data\obj\Debug\netcoreapp2.0\ViData.csproj.CopyComplete
 D:\git\athena_core\Data\obj\Debug\netcoreapp2.0\ViData.dll
 D:\git\athena_core\Data\obj\Debug\netcoreapp2.0\ViData.pdb
+D:\git\athena_core\Data\obj\Debug\netcoreapp2.0\ViData.csprojResolveAssemblyReference.cache

@@ -14,3 +14,4 @@ D:\git\athena_core\Core\obj\Debug\netcoreapp2.0\ViCore.AssemblyInfoInputs.cache
 D:\git\athena_core\Core\obj\Debug\netcoreapp2.0\ViCore.AssemblyInfo.cs
 D:\git\athena_core\Core\obj\Debug\netcoreapp2.0\ViCore.dll
 D:\git\athena_core\Core\obj\Debug\netcoreapp2.0\ViCore.pdb
+D:\git\athena_core\Core\obj\Debug\netcoreapp2.0\ViCore.csprojResolveAssemblyReference.cache

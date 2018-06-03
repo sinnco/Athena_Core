@@ -37,10 +37,11 @@ namespace mvc_project
             {
                 app.UseExceptionHandler("/Home/Error");
             }
-
+            ViCore.Http.NetCoreConfig.SetEnvironment(env);
+            ViCore.Http.NetCoreConfig.SetAppSettings(Configuration);
             app.UseStaticFiles();
             app.UseHttpContextAI();
-            
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
