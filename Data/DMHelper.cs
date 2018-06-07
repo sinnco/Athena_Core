@@ -16,7 +16,7 @@ namespace ViData
     {
         const string CurrentSessionKey = "dm.current_session";
         const string ReadCurrentSessionKey = "dm.current_session.read";
-        const string CfgFileName = "ViCore.config";
+        string CfgFileName = "ViCore.config";
         const string DefaultProvider = "MySql.Data.MySqlClient";
         static readonly DMHelper _instance = new DMHelper();
         internal readonly DMSessionFactory _sessionfactory;
@@ -40,8 +40,12 @@ namespace ViData
         /// <summary>
         /// 解析映射关系
         /// </summary>
-        public void ExportMapping()
+        public void ExportMapping(string envName = null)
         {
+            if(!string.IsNullOrEmpty(envName))
+            {           
+                 CfgFileName = envName+"."+CfgFileName; 
+            }
             foreach (var ass in _sessionfactory.Mapping)
             {
                 foreach (var type in ass.GetExportedTypes())

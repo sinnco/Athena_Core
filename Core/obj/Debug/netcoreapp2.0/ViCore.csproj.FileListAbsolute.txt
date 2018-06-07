@@ -15,3 +15,11 @@ D:\git\athena_core\Core\obj\Debug\netcoreapp2.0\ViCore.AssemblyInfo.cs
 D:\git\athena_core\Core\obj\Debug\netcoreapp2.0\ViCore.dll
 D:\git\athena_core\Core\obj\Debug\netcoreapp2.0\ViCore.pdb
 D:\git\athena_core\Core\obj\Debug\netcoreapp2.0\ViCore.csprojResolveAssemblyReference.cache
+E:\git\athena_core\Core\bin\Debug\netcoreapp2.0\ViCore.deps.json
+E:\git\athena_core\Core\bin\Debug\netcoreapp2.0\ViCore.dll
+E:\git\athena_core\Core\bin\Debug\netcoreapp2.0\ViCore.pdb
+E:\git\athena_core\Core\obj\Debug\netcoreapp2.0\ViCore.csproj.CoreCompileInputs.cache
+E:\git\athena_core\Core\obj\Debug\netcoreapp2.0\ViCore.AssemblyInfoInputs.cache
+E:\git\athena_core\Core\obj\Debug\netcoreapp2.0\ViCore.AssemblyInfo.cs
+E:\git\athena_core\Core\obj\Debug\netcoreapp2.0\ViCore.dll
+E:\git\athena_core\Core\obj\Debug\netcoreapp2.0\ViCore.pdb

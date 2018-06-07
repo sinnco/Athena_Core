@@ -5686,28 +5686,33 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\espirit\\.nuget\\packages\\": {},
+    "C:\\Users\\spiritxk\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\git\\athena_core\\Core\\ViCore.csproj",
+      "projectUniqueName": "E:\\git\\athena_core\\Core\\ViCore.csproj",
       "projectName": "ViCore",
-      "projectPath": "D:\\git\\athena_core\\Core\\ViCore.csproj",
-      "packagesPath": "C:\\Users\\espirit\\.nuget\\packages\\",
-      "outputPath": "D:\\git\\athena_core\\Core\\obj\\",
+      "projectPath": "E:\\git\\athena_core\\Core\\ViCore.csproj",
+      "packagesPath": "C:\\Users\\spiritxk\\.nuget\\packages\\",
+      "outputPath": "E:\\git\\athena_core\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\espirit\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\spiritxk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

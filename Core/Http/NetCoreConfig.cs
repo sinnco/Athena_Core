@@ -7,7 +7,7 @@ namespace ViCore.Http
     public static class NetCoreConfig
     {
         public static IHostingEnvironment Environment {get;set;}
-        public static void SetEnvironment( IHostingEnvironment env)
+        public static void SetEnvironment(IHostingEnvironment env)
         {
             Environment = env;
         }

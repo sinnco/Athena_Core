@@ -21,3 +21,13 @@ D:\git\athena_core\Data\obj\Debug\netcoreapp2.0\ViData.csproj.CopyComplete
 D:\git\athena_core\Data\obj\Debug\netcoreapp2.0\ViData.dll
 D:\git\athena_core\Data\obj\Debug\netcoreapp2.0\ViData.pdb
 D:\git\athena_core\Data\obj\Debug\netcoreapp2.0\ViData.csprojResolveAssemblyReference.cache
+E:\git\athena_core\data\bin\Debug\netcoreapp2.0\ViData.deps.json
+E:\git\athena_core\data\bin\Debug\netcoreapp2.0\ViData.dll
+E:\git\athena_core\data\bin\Debug\netcoreapp2.0\ViData.pdb
+E:\git\athena_core\data\bin\Debug\netcoreapp2.0\ViCore.dll
+E:\git\athena_core\data\bin\Debug\netcoreapp2.0\ViCore.pdb
+E:\git\athena_core\data\obj\Debug\netcoreapp2.0\ViData.csproj.CoreCompileInputs.cache
+E:\git\athena_core\data\obj\Debug\netcoreapp2.0\ViData.AssemblyInfoInputs.cache
+E:\git\athena_core\data\obj\Debug\netcoreapp2.0\ViData.AssemblyInfo.cs
+E:\git\athena_core\data\obj\Debug\netcoreapp2.0\ViData.dll
+E:\git\athena_core\data\obj\Debug\netcoreapp2.0\ViData.pdb
