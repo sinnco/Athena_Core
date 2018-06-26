@@ -13,6 +13,18 @@ namespace ViCore.Http
         }
 
         /// <summary>
+        /// 环境名称
+        /// </summary>
+        /// <returns></returns>
+        public static string EnvironmentName
+        {
+            get
+            {
+                return Environment.EnvironmentName;
+            }
+        }
+
+        /// <summary>
         /// 网站根目录
         /// </summary>
         /// <returns></returns>
