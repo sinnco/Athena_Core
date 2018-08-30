@@ -14,7 +14,7 @@ namespace ViCore.Caching
         public static object GetCache(string key)
         {
             object val = null;
-            if (key != null && cache.TryGetValue(key, out val))
+            if (cache.TryGetValue(key, out val))
             {
                 return val;
             }
@@ -27,7 +27,7 @@ namespace ViCore.Caching
         public static T GetCache<T>(string key) where T : class
         {
             object val = null;
-            if (key != null && cache.TryGetValue(key, out val))
+            if (cache.TryGetValue(key, out val))
             {
                 return val as T;
             }
@@ -45,13 +45,19 @@ namespace ViCore.Caching
         /// <param name="expireTime">秒</param>
         public static void SetChache(string key, object value, int expireTime)
         {
-            if (key != null)
+            cache.Set(key, value, new MemoryCacheEntryOptions
             {
-                cache.Set(key, value, new MemoryCacheEntryOptions
-                {
-                    SlidingExpiration = TimeSpan.FromSeconds(expireTime)
-                });
-            }
+                SlidingExpiration = TimeSpan.FromSeconds(expireTime)
+            });
+        }
+
+        /// <summary>
+        /// 清除缓存
+        /// </summary>
+        /// <param name="key"></param>
+        public static void RemoveChache(string key)
+        {
+            cache.Remove(key);
         }
     }
 }
